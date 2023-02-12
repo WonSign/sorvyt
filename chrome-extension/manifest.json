@@ -1,0 +1,12 @@
+{
+    "name" : "Video Sorting for YouTube",
+    "Description" : "Sort YouTube videos by like-to-dislike ratio, oldest and lowest views",
+    "version" : "0.0.1",
+    "manifest_version" : 3,
+    "content_scripts" : [
+        {
+            "matches" : ["https://*.youtube.com/*"],
+            "js" : ["index.js"]
+        }
+    ]
+}
