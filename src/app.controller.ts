@@ -18,7 +18,7 @@ export class AppController {
     return {
       keyword: keyword,
       channelInfo: channelInfo.map((item) => ({
-        channelProfile: item.snippet.thumbnails.medium.url,
+        channelProfile: item.snippet.thumbnails.default.url,
         channelName: item.snippet.title,
         channelId: item.snippet.channelId,
       })),
