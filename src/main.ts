@@ -29,7 +29,14 @@ async function bootstrap() {
   );
   app.enableCors();
   app.use(cookieParser());
-  app.use(helmet());
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ['self'],
+        imgSrc: ['self', 'https://yt3.ggpht.com'],
+      },
+    }),
+  );
   app.use(csurf({ cookie: true }));
   app.use(compression());
   await app.listen(process.env.PORT);
