@@ -13,13 +13,15 @@ export class AppController {
 
   @Get('/search')
   @Render('search')
-  async search(@Query('keyword') keyword: string) {
-    const channelInfo = this.appService.getChannelInfo(keyword);
+  async search(@Query('keyword') keyword: string): Promise<any> {
+    const channelInfo = await this.appService.getChannelInfo(keyword);
     return {
       keyword: keyword,
-      channelProfile: (await channelInfo).snippet.title,
-      channelName: (await channelInfo).snippet.thumbnails.medium.url,
-      channelId: (await channelInfo).snippet.channelId,
+      channelInfo: channelInfo.map((item) => ({
+        channelProfile: item.snippet.thumbnails.medium.url,
+        channelName: item.snippet.title,
+        channelId: item.snippet.channelId,
+      })),
     };
   }
 

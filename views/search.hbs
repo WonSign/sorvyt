@@ -6,8 +6,13 @@
 
 {{#>layout}}
     {{#*inline "content"}}
-        <h1>
-            {{ channelProfile }}
-        </h1>
+        <ul>
+            {{#each channelInfo}}
+                <li>
+                    <img src="{{channelProfile}}">
+                    <h3>{{channelName}}</h3>
+                </li>
+            {{/each}}
+        </ul>
     {{/inline}}
 {{/layout}}
