@@ -7,13 +7,25 @@ export class AppController {
 
   @Get('/')
   @Render('home')
-  homepage() {
+  async homepage() {
     return this.appService.homepage();
   }
 
   @Get('/search')
   @Render('search')
-  search(@Query('keyword') keyword: string) {
-    this.appService.search(keyword);
+  async search(@Query('keyword') keyword: string) {
+    const channelInfo = this.appService.getChannelInfo(keyword);
+    return {
+      keyword: keyword,
+      channelProfile: (await channelInfo).snippet.title,
+      channelName: (await channelInfo).snippet.thumbnails.medium.url,
+      channelId: (await channelInfo).snippet.channelId,
+    };
+  }
+
+  @Get('/result')
+  @Render('result')
+  async result(@Query('channelId') channelId: string) {
+    this.appService.getVideos(channelId);
   }
 }
