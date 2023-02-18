@@ -1,18 +1,16 @@
 <head>
     <title>
-        {{ keyword }} - sotvyt
+        {{keyword}} - sotvyt
     </title>
 </head>
 
 {{#>layout}}
     {{#*inline "content"}}
-        <ul>
-            {{#each channelInfo}}
-                <li>
-                    <img src="{{channelProfile}}">
-                    <h3>{{channelName}}</h3>
-                </li>
-            {{/each}}
-        </ul>
+        {{#each channelInfo}}
+            <a href="/result?channelId={{channelId}}"
+                <img src="{{channelProfile}}">
+                <h3>{{channelName}}</h3>
+            </a>
+        {{/each}}
     {{/inline}}
 {{/layout}}

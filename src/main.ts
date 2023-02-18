@@ -34,6 +34,8 @@ async function bootstrap() {
       directives: {
         defaultSrc: ['self'],
         imgSrc: ['self', 'https://yt3.ggpht.com'],
+        mediaSrc: ['self', 'https://www.youtube.com'],
+        frameSrc: ['self', 'https://www.youtube.com'],
       },
     }),
   );

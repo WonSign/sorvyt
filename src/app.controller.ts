@@ -28,6 +28,12 @@ export class AppController {
   @Get('/result')
   @Render('result')
   async result(@Query('channelId') channelId: string) {
-    this.appService.getVideos(channelId);
+    const videos = await this.appService.getVideos(channelId);
+    return {
+      videos: videos.map((item) => ({
+        channelName: item.snippet.channelTitle,
+        videoId: item.id.videoId,
+      })),
+    };
   }
 }

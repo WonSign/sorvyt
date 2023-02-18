@@ -1,9 +1,13 @@
+<head>
+    <title>
+        {{channelName}} - sorvyt
+    </title>
+</head>
+
 {{#>layout}}
     {{#*inline "content"}}
-        <head>
-            <title>
-                {{channelInfo.channelName}} - sorvyt
-            </title>
-        </head>
+        {{#each videos}}
+            <iframe src="https://www.youtube.com/embed/{{videoId}}"></iframe>
+        {{/each}}
     {{/inline}}
 {{/layout}}
