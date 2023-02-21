@@ -35,6 +35,7 @@
 {{#>layout}}
     {{#*inline "content"}}
         <form id="sort-order" method="get" action="/result?channelId={{channelId}}&order={{order}}">
+            <input type="hidden" name="channelId" value="{{channelId}}">
             <input type="radio" name="order" value="date" {{#if (eq order 'date')}}checked{{/if}}>
             <label for="date"> Date </label>
             <input type="radio" name="order" value="rating" {{#if (eq order 'rating')}}checked{{/if}}>
@@ -57,7 +58,7 @@
         buttons.forEach((button) => {
             button.addEventListener('change', (event) => {
                 const order = event.target.value;
-                const channelId = {{channelId}};
+                const channelId = '{{channelId}}';
                 const url = `/result?channelId=${channelId}&order=${order}`;
                 form.setAttribute('action', url);
                 form.submit();
