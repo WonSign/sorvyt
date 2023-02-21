@@ -32,10 +32,6 @@ async function bootstrap() {
   );
   app.enableCors();
   app.use(cookieParser());
-  app.use((req, res, next) => {
-    res.locals.nonce = Math.random().toString(36).substring(2);
-    next();
-  });
   app.use(
     helmet.contentSecurityPolicy({
       directives: {
