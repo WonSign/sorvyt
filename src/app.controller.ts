@@ -8,12 +8,12 @@ export class AppController {
   @Get('/')
   @Render('home')
   async homepage() {
-    return this.appService.homepage();
+    return;
   }
 
   @Get('/search')
   @Render('search')
-  async search(@Query('keyword') keyword: string): Promise<any> {
+  async search(@Query('keyword') keyword: string) {
     const channelInfo = await this.appService.getChannelInfo(keyword);
     return {
       keyword: keyword,
@@ -27,9 +27,13 @@ export class AppController {
 
   @Get('/result')
   @Render('result')
-  async result(@Query('channelId') channelId: string) {
-    const videos = await this.appService.getVideos(channelId);
+  async result(
+    @Query('channelId') channelId: string,
+    @Query('order') order: string,
+  ) {
+    const videos = await this.appService.getVideos(channelId, order);
     return {
+      order: order,
       videos: videos.map((item) => ({
         channelName: item.snippet.channelTitle,
         videoId: item.id.videoId,

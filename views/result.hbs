@@ -4,10 +4,64 @@
     </title>
 </head>
 
+<style>
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+    
+    input[type="radio"]:checked:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #333;
+    }
+</style>
+
 {{#>layout}}
     {{#*inline "content"}}
+        <form id="sort-order" method="get" action="/result?channelId={{channelId}}&order={{order}}">
+            <input type="radio" name="order" value="date" {{#if (eq order 'date')}}checked{{/if}}>
+            <label for="date"> Date </label>
+            <input type="radio" name="order" value="rating" {{#if (eq order 'rating')}}checked{{/if}}>
+            <label for="rating"> Rating </label>
+            <input type="radio" name="order" value="title" {{#if (eq order 'title')}}checked{{/if}}>
+            <label for="title"> Title </label>
+            <input type="radio" name="order" value="viewCount" {{#if (eq order 'viewCount')}}checked{{/if}}>
+            <label for="views"> Views </label>
+        </form>
         {{#each videos}}
             <iframe src="https://www.youtube.com/embed/{{videoId}}"></iframe>
         {{/each}}
     {{/inline}}
 {{/layout}}
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('sort-order');
+        const buttons = form.querySelectorAll('input[name="order"]');
+        buttons.forEach((button) => {
+            button.addEventListener('change', (event) => {
+                const order = event.target.value;
+                const channelId = '{{channelId}}';
+                const url = `/result?channelId=${channelId}&order=${order}`;
+                form.setAttribute('action', url);
+                form.submit();
+            });
+        });
+    });
+</script>

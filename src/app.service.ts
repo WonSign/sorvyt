@@ -6,25 +6,15 @@ import { firstValueFrom } from 'rxjs';
 export class AppService {
   constructor(private readonly httpService: HttpService) {}
 
-  async homepage() {
-    return;
-  }
-
   async getChannelInfo(keyword: string) {
-    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=channel&q=${keyword}&maxResults=10&key=${process.env.YOUTUBE_API_KEY}`;
+    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=channel&maxResults=10&q=${keyword}&key=${process.env.YOUTUBE_API_KEY}`;
     const { data } = await firstValueFrom(this.httpService.get(url));
     return data.items;
   }
 
-  async getVideos(channelId: string) {
-    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=50&key=${process.env.YOUTUBE_API_KEY}`;
+  async getVideos(channelId: string, order: string) {
+    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=videos&order=${order}&maxResults=50&channelId=${channelId}&key=${process.env.YOUTUBE_API_KEY}`;
     const { data } = await firstValueFrom(this.httpService.get(url));
     return data.items;
-  }
-
-  async sortVideos(channelId: string) {
-    const videos = await this.getVideos(channelId);
-    const { sortedVideos } = videos;
-    return sortedVideos;
   }
 }

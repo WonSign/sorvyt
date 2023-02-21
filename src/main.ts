@@ -8,6 +8,7 @@ import * as hbsUtils from 'hbs-utils';
 import * as cookieParser from 'cookie-parser';
 import * as csurf from 'csurf';
 import * as compression from 'compression';
+import * as crypto from 'crypto';
 import { join } from 'path';
 
 async function bootstrap() {
@@ -15,6 +16,7 @@ async function bootstrap() {
     cors: true,
     logger: ['error', 'warn', 'debug'],
   });
+  const nonce = crypto.randomBytes(16).toString('base64');
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', '..', 'views'));
   hbs.registerPartials(join(__dirname, '..', '..', 'views/layout'));
@@ -22,6 +24,9 @@ async function bootstrap() {
     join(__dirname, '..', '..', 'views/layout'),
   );
   app.setViewEngine('hbs');
+  hbs.registerHelper('eq', function (a, b) {
+    return a === b;
+  });
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,
@@ -33,6 +38,7 @@ async function bootstrap() {
     helmet.contentSecurityPolicy({
       directives: {
         defaultSrc: ['self'],
+        scriptSrc: ['self', `'nonce-${nonce}'`],
         imgSrc: ['self', 'https://yt3.ggpht.com'],
         mediaSrc: ['self', 'https://www.youtube.com'],
         frameSrc: ['self', 'https://www.youtube.com'],
