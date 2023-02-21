@@ -2,13 +2,12 @@ import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import * as hbs from 'hbs';
 import * as hbsUtils from 'hbs-utils';
 import * as cookieParser from 'cookie-parser';
 import * as csurf from 'csurf';
 import * as compression from 'compression';
-import * as crypto from 'crypto';
 import { join } from 'path';
 
 async function bootstrap() {
@@ -16,7 +15,6 @@ async function bootstrap() {
     cors: true,
     logger: ['error', 'warn', 'debug'],
   });
-  const nonce = crypto.randomBytes(16).toString('base64');
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', '..', 'views'));
   hbs.registerPartials(join(__dirname, '..', '..', 'views/layout'));
@@ -34,14 +32,18 @@ async function bootstrap() {
   );
   app.enableCors();
   app.use(cookieParser());
+  app.use((req, res, next) => {
+    res.locals.nonce = Math.random().toString(36).substring(2);
+    next();
+  });
   app.use(
     helmet.contentSecurityPolicy({
       directives: {
-        defaultSrc: ['self'],
-        scriptSrc: ['self', `'nonce-${nonce}'`],
-        imgSrc: ['self', 'https://yt3.ggpht.com'],
-        mediaSrc: ['self', 'https://www.youtube.com'],
-        frameSrc: ['self', 'https://www.youtube.com'],
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
+        imgSrc: ["'self'", 'https://yt3.ggpht.com'],
+        mediaSrc: ["'self'", 'https://www.youtube.com'],
+        frameSrc: ["'self'", 'https://www.youtube.com'],
       },
     }),
   );

@@ -57,7 +57,7 @@
         buttons.forEach((button) => {
             button.addEventListener('change', (event) => {
                 const order = event.target.value;
-                const channelId = '{{channelId}}';
+                const channelId = {{channelId}};
                 const url = `/result?channelId=${channelId}&order=${order}`;
                 form.setAttribute('action', url);
                 form.submit();

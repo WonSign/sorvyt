@@ -33,6 +33,7 @@ export class AppController {
   ) {
     const videos = await this.appService.getVideos(channelId, order);
     return {
+      channelId: channelId,
       order: order,
       videos: videos.map((item) => ({
         channelName: item.snippet.channelTitle,
