@@ -1,7 +1,19 @@
 {{#>layout}}
-    {{#*inline "content"}}
+    {{#*inline "main"}}
+        <style>
+            form {
+                margin: auto;
+                padding: 50px;
+                text-align: center;
+            }
+            input[type="text"] {
+                width: 270px;
+                height: 25px;
+                font-size: 20px;
+            }
+        </style>
         <form action="search" method="get">
-            <input type="text" name="keyword" placeholder="Search the Channel">
+            <input type="text" name="keyword" placeholder="Search for a YouTube channel">
             <input type="submit">
         </form>
     {{/inline}}

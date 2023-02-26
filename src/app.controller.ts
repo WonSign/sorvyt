@@ -38,6 +38,8 @@ export class AppController {
       videos: videos.map((item) => ({
         channelName: item.snippet.channelTitle,
         videoId: item.id.videoId,
+        thumbnail: item.snippet.thumbnails.medium.url,
+        title: item.snippet.title,
       })),
     };
   }

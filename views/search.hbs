@@ -4,13 +4,39 @@
     </title>
 </head>
 
+<style>
+    .channel-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    .channel-item {
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+    .channel-item > img {
+        max-width: 100%;
+        height: auto;
+    }
+    .channel-item > h3 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+</style>
+
 {{#>layout}}
-    {{#*inline "content"}}
-        {{#each channelInfo}}
-            <a href="/result?channelId={{channelId}}&order=date"
-                <img src="{{channelProfile}}">
-                <h3>{{channelName}}</h3>
-            </a>
-        {{/each}}
+    {{#*inline "main"}}
+        <div class="channel-grid">
+            {{#each channelInfo}}
+            <div class="channel-item">
+                <a href="/result?channelId={{channelId}}&order=date">
+                    <img src="{{channelProfile}}" alt="{{channelName}}">
+                    <h3>{{channelName}}</h3>
+                </a>
+            </div>
+            {{/each}}
+        </div>
     {{/inline}}
 {{/layout}}
