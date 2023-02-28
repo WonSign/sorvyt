@@ -83,10 +83,10 @@ export class TestController {
     return {
       channelId: 'channelId',
       order: 'date',
+      channelName:
+        '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
       videos: [
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -94,8 +94,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -103,8 +101,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -112,8 +108,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -121,8 +115,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -130,8 +122,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -139,8 +129,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -148,8 +136,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -157,8 +143,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -166,8 +150,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -175,8 +157,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -184,8 +164,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -193,8 +171,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -202,8 +178,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -211,8 +185,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -220,8 +192,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -229,8 +199,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -238,8 +206,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -247,8 +213,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -256,8 +220,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -265,8 +227,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -274,8 +234,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -283,8 +241,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -292,8 +248,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -301,8 +255,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -310,8 +262,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -319,8 +269,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -328,8 +276,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -337,8 +283,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -346,8 +290,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -355,8 +297,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -364,8 +304,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -373,8 +311,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -382,8 +318,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -391,8 +325,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -400,8 +332,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -409,8 +339,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -418,8 +346,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -427,8 +353,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -436,8 +360,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -445,8 +367,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -454,8 +374,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -463,8 +381,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -472,8 +388,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -481,8 +395,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -490,8 +402,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -499,8 +409,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -508,8 +416,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -517,8 +423,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
@@ -526,8 +430,6 @@ export class TestController {
             '동영상 이름이라는 것은 140글자였나 280글자였나 기억이 안 나지만 어이가 없을 만큼 길 수가 있도록 제한이 널널하기 때문에 나의 생각에는 테스트 케이스도 길어야 한다고 생각한다 반박시 네 말이 맞다.',
         },
         {
-          channelName:
-            '에이 설마 채널 이름이 동영상 이름보다 길 일이 얼마나 있겠냐',
           videoId: 'https://youtu.be/Y0xMbCp8t4s',
           thumbnail:
             'https://i.ytimg.com/vi/Y0xMbCp8t4s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIFsoZTAP&rs=AOn4CLAWsiJmy16L5VsqUBSwbjOauAg89w',
