@@ -8,6 +8,7 @@ import * as hbsUtils from 'hbs-utils';
 import * as cookieParser from 'cookie-parser';
 import * as csurf from 'csurf';
 import * as compression from 'compression';
+import * as hpp from 'hpp';
 import { join } from 'path';
 
 async function bootstrap() {
@@ -36,14 +37,21 @@ async function bootstrap() {
     helmet.contentSecurityPolicy({
       directives: {
         defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'"],
         imgSrc: ["'self'", 'https://yt3.ggpht.com', 'https://i.ytimg.com'],
         mediaSrc: ["'self'", 'https://www.youtube.com'],
         frameSrc: ["'self'", 'https://www.youtube.com'],
       },
     }),
+    helmet.referrerPolicy({
+      policy: 'same-origin',
+    }),
+    helmet.frameguard({
+      action: 'sameorigin',
+    }),
   );
   app.use(csurf({ cookie: true }));
+  app.use(hpp());
   app.use(compression());
   await app.listen(process.env.PORT);
 }
