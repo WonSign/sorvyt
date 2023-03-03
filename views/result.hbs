@@ -1,11 +1,16 @@
 <head>
     <title>{{channelName}} - sorvyt</title>
     <style>
+        @font-face {
+            font-family: "YouTubeFont";
+            src: url(/font/YouTubeSansBlack.otf);
+        }
         .grid-container {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: auto 1fr;
             gap: 16px;
+            font-family: "YouTubeFont";
         }
         .video-item {
             display: flex;
@@ -15,28 +20,45 @@
             border: 1px solid #ddd;
             overflow: hidden;
         }
-        .video-item > img {
-            width: 100%;
+        .video-item > a > img {
             height: auto;
             object-fit: cover;
             object-position: center;
         }
-        .video-item > h3 {
+        .video-item > a > h3 {
+            width: 320px;
             margin-top: 0.5rem;
-            font-size: 1.5rem;
+            font-size: x-large;
             text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
         form {
             text-align: center;
             margin-top: 15px;
         }
-        form > input {
-            margin-left: 30px;
-            margin-right: 30px;
+        form > div > input {
+            margin-left: 20px;
+            margin-right: 20px;
         }
-        form > label {
+        form > div > label {
             font-size: 20px;
-            margin: 15px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .radio-container {
+            display: flex;
+            justify-content: center;
+            align-items: row;
+        }
+        .radio-wrapper {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .radio-wrapper > label {
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -46,17 +68,27 @@
     <div class="grid-container">
             <p></p>
             <p>
-                <form id="sort-order" method="get" action="/result?channelId={{channelId}}&order={{order}}">
-                    <input type="hidden" name="channelId" value="{{channelId}}">
-                    <label for="sort-date">Date</label>
-                    <input type="radio" id="sort-date" name="order" value="date" {{#if (eq order 'date')}}checked{{/if}}>
-                    <label for="sort-rating">Rating</label>
-                    <input type="radio" id="sort-rating" name="order" value="rating" {{#if (eq order 'rating')}}checked{{/if}}>
-                    <label for="sort-title">Title</label>
-                    <input type="radio" id="sort-title" name="order" value="title" {{#if (eq order 'title')}}checked{{/if}}>
-                    <label for="sort-views">Views</label>
-                    <input type="radio" id="sort-views" name="order" value="viewCount" {{#if (eq order 'viewCount')}}checked{{/if}}>
-                </form>
+                <div class="radio-container">
+                    <form id="sort-order" method="get" action="/result?channelId={{channelId}}&order={{order}}">
+                        <input type="hidden" name="channelId" value="{{channelId}}">
+                        <div class="radio-wrapper">
+                            <input type="radio" id="sort-date" name="order" value="date" {{#if (eq order 'date')}}checked{{/if}}>
+                            <label for="sort-date">Date</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="sort-rating" name="order" value="rating" {{#if (eq order 'rating')}}checked{{/if}}>
+                            <label for="sort-rating">Rating</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="sort-title" name="order" value="title" {{#if (eq order 'title')}}checked{{/if}}>
+                            <label for="sort-views">Views</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="sort-views" name="order" value="viewCount" {{#if (eq order 'viewCount')}}checked{{/if}}>
+                            <label for="sort-title">Title</label>
+                        </div>
+                    </form>
+                </div>
             </p>
             <p>
                 {{#each videos}}

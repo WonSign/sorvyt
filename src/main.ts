@@ -16,7 +16,7 @@ async function bootstrap() {
     cors: true,
     logger: ['error', 'warn', 'debug'],
   });
-  app.useStaticAssets(join(__dirname, '..', 'public'));
+  app.useStaticAssets(join(__dirname, '..', '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', '..', 'views'));
   hbs.registerPartials(join(__dirname, '..', '..', 'views/layout'));
   hbsUtils(hbs).registerWatchedPartials(

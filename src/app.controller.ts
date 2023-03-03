@@ -35,8 +35,8 @@ export class AppController {
     return {
       channelId: channelId,
       order: order,
+      channelName: videos[0].snippet.channelTitle,
       videos: videos.map((item) => ({
-        channelName: item.snippet.channelTitle,
         videoId: item.id.videoId,
         thumbnail: item.snippet.thumbnails.medium.url,
         title: item.snippet.title,
