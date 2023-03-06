@@ -13,6 +13,8 @@
             font-family: "YouTubeFont";
         }
         .video-item {
+            width: 280px;
+            height: 220px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,18 +23,19 @@
             overflow: hidden;
         }
         .video-item > a > img {
-            height: auto;
+            width: auto;
             object-fit: cover;
             object-position: center;
         }
         .video-item > a > h3 {
-            width: 320px;
+            width: 300px;
             margin-top: 0.5rem;
-            font-size: x-large;
+            font-size: 22px;
             text-align: center;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            margin-left: 20px;
         }
         form {
             text-align: center;
@@ -95,7 +98,7 @@
                     <div class="video-item">
                         <a href="https://www.youtube.com/watch?v={{videoId}}" target="_blank">
                             <img src="{{thumbnail}}" alt="{{title}}">
-                            <h3>{{title}}</h3>
+                            <h3 title="{{title}}">{{title}}</h3>
                         </a>
                     </div>
                 {{/each}}
