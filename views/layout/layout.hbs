@@ -30,12 +30,25 @@
             color: #DDC6B6;
             padding: 2%;
         }
+        footer {
+            height: 88px;
+            bottom: 0;
+            width: 100%;
+            background-color: #262223;
+        }
+        footer > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         body {
+            margin: 0;
             background-color: #DDC6B6;
         }
         .main {
             display: flex;
             justify-content: space-between;
+            min-height: calc(100vh - 176px);
         }
         .ad {
             width: 200px;
@@ -75,5 +88,18 @@
             </script>
         </div>
     </div>
+
+    <footer>
+        <div>
+            <nav>
+                <a href="https://github.com/WonSign/sorvyt" target="_blank"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Repository" height="41" width="41"> </a>
+                <a href="https://www.buymeacoffee.com/WonSign" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"> </a>
+            </nav>
+            <br>
+            <p>
+                <span>© 2023. WonSign All rights Reserved.</span>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
