@@ -13,7 +13,7 @@ export class AppService {
   }
 
   async getVideos(channelId: string, order: string) {
-    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=videos&order=${order}&maxResults=50&channelId=${channelId}&key=${process.env.YOUTUBE_API_KEY}`;
+    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&order=${order}&maxResults=50&channelId=${channelId}&key=${process.env.YOUTUBE_API_KEY}`;
     const { data } = await firstValueFrom(this.httpService.get(url));
     return data.items;
   }
