@@ -1,4 +1,3 @@
-import { TestController } from './test.controller';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -17,7 +16,7 @@ import { ThrottlerModule } from '@nestjs/throttler';
       limit: 10,
     }),
   ],
-  controllers: [AppController, TestController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
